@@ -1,0 +1,73 @@
+.page-header {
+    padding-top: 80px;
+}
+
+.page-header h1 {
+    color: var(--color-text-white);
+}
+
+.page-header .lead {
+    color: var(--color-text-muted);
+}
+
+.project-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+a.card-item {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-item {
+    padding: 1.5rem;
+    height: 100%;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-item:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-accent);
+}
+
+.card-item h5 {
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+}
+
+.card-item h5 a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: var(--transition-color);
+}
+
+.card-item h5 a:hover {
+    color: var(--color-accent-light);
+}
+
+.card-item p {
+    color: var(--color-text-white);
+}
+
+.card-date {
+    color: var(--color-text-dimmed);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-tags {
+    margin-top: 0.75rem;
+}
+
+.card-tag {
+    background-color: var(--color-border);
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}

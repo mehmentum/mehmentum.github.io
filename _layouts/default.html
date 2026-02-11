@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta name="robots" content="index,follow">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Mehmet Kizil, Blog, Software Entwickler, Backend Developer, Java, Spring Boot, Portfolio, Stuttgart">
+    <meta name="title" content="{{ page.title }} | Mehmet Kizil">
+    <meta name="description" content="{{ page.description | default: site.description }}">
+
+    <meta name="author" content="Mehmet Kizil">
+    <title>{{ page.title }} | Mehmet Kizil</title>
+
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    <link rel="stylesheet preload" as="style" type="text/css"
+        href="{{ '/assets/css/bootstrap.min.css' | relative_url }}">
+    <link rel="stylesheet preload" as="style" type="text/css" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/blog-zusatz.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/cards.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Mehmet Kizil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/#about">Über mich</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#career">Beruflicher Werdegang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#education">Bildungsweg</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/projekte">Projekte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {{ content }}
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <h5 class="footer-name">Mehmet Kizil</h5>
+            <p class="footer-location">Stuttgart, Deutschland</p>
+            <div class="footer-social">
+                <a href="mailto:kontakt@mehmetkizil.de" aria-label="E-Mail"><i class="bi bi-envelope-fill"></i></a>
+                <a href="https://www.linkedin.com/in/mehmet-kizil" target="_blank" aria-label="LinkedIn"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/mehmentum" target="_blank" aria-label="GitHub"><i
+                        class="bi bi-github"></i></a>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copyright">&copy; 2025 Mehmet Kizil</p>
+        </div>
+    </footer>
+
+    <script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/blog-filter.js' | relative_url }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.tag-filter {
+    padding: 1.5rem;
+}
+
+.tag-filter h5 {
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+}
+
+.tag-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--color-text-body);
+    padding: 0.5rem 0;
+    cursor: pointer;
+    transition: var(--transition-color);
+}
+
+.tag-btn:hover,
+.tag-btn.active {
+    color: var(--color-accent);
+}
+
+@media (max-width: 991px) {
+    .tag-filter {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .tag-filter h5 {
+        display: none;
+    }
+
+    .tag-btn {
+        flex-shrink: 0;
+        width: auto;
+        padding: 0.5rem 1rem;
+        background-color: var(--color-border);
+        border-radius: 20px;
+        font-size: 0.85rem;
+    }
+
+    .tag-btn.active {
+        background-color: var(--color-accent);
+        color: var(--color-bg-dark);
+    }
+}

@@ -1,0 +1,12 @@
+title: Mehmet Kizil
+description: Blog von Mehmet Kizil – Softwareentwickler aus Stuttgart. Spezialisiert auf Java, Spring Boot und Identity & Access Management.
+baseurl: ""
+url: "https://mehmetkizil.de"
+
+markdown: kramdown
+permalink: /blog/:title/
+
+highlighter: rouge
+
+kramdown:
+  syntax_highlighter: rouge

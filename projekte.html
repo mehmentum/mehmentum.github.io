@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta name="robots" content="index,follow">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Mehmet Kizil, Projekte, Software Entwickler, Backend Developer, Java, Spring Boot, Portfolio, Stuttgart">
+    <meta name="title" content="Projekte | Mehmet Kizil">
+    <meta name="description"
+        content="Ausgewählte Projekte von Mehmet Kizil – von REST-APIs über Datensynchronisation bis hin zu mobilen Apps.">
+    <meta name="author" content="Mehmet Kizil">
+    <title>Projekte | Mehmet Kizil</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+
+    <link rel="canonical" href="https://mehmetkizil.de/projekte" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Mehmet Kizil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/#about">Über mich</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#career">Beruflicher Werdegang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#education">Bildungsweg</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/projekte">Projekte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header py-5">
+        <div class="container">
+            <h1 class="mb-3">Projekte</h1>
+            <p class="lead">Eine Auswahl meiner Arbeiten und Nebenprojekte.</p>
+        </div>
+    </section>
+
+    <!-- Projekte Grid -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <!-- Projekt 1 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card-item" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                        <h5>Nutzer Daten Service</h5>
+                        <p class="project-tech mb-3">
+                            <i class="devicon-java-plain colored"></i> Java,
+                            <i class="devicon-spring-plain colored"></i> Spring,
+                            <i class="devicon-postgresql-plain colored"></i> PostgreSQL,
+                            <i class="devicon-docker-plain colored"></i> Docker,
+                            <i class="devicon-kubernetes-plain colored"></i> Kubernetes,
+                            <i class="devicon-elasticsearch-plain colored"></i> Elasticsearch,
+                            <i class="devicon-prometheus-original colored"></i> Prometheus,
+                            <i class="devicon-grafana-plain colored"></i> Grafana,
+                            <i class="devicon-jenkins-plain colored"></i> Jenkins,
+                            <i class="devicon-sonarqube-original colored"></i> sonarqube,
+                            Black Duck, JBoss, IBM DB2
+                        </p>
+                        <p>REST-Webservice zur Bereitstellung von Nutzerdaten für interne Clients. Java, Spring,
+                            PostgreSQL – optimiert für hohe Datenvolumen.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Details
+                                ansehen <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 1 -->
+                <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModal1Label">Nutzer Daten Service</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="project-tech mb-3">
+                                    <i class="devicon-java-plain colored"></i> Java,
+                                    <i class="devicon-spring-plain colored"></i> Spring,
+                                    <i class="devicon-postgresql-plain colored"></i> PostgreSQL,
+                                    <i class="devicon-docker-plain colored"></i> Docker,
+                                    <i class="devicon-kubernetes-plain colored"></i> Kubernetes,
+                                    <i class="devicon-elasticsearch-plain colored"></i> Elasticsearch,
+                                    <i class="devicon-prometheus-original colored"></i> Prometheus,
+                                    <i class="devicon-grafana-plain colored"></i> Grafana,
+                                    <i class="devicon-jenkins-plain colored"></i> Jenkins,
+                                    <i class="devicon-sonarqube-original colored"></i> sonarqube,
+                                    Black Duck, JBoss, IBM DB2
+                                </p>
+                                <p>Ein zentraler Webservice, der Nutzerdaten und deren Änderungen für autorisierte
+                                    Clients bereitstellt. Je nach beantragter User-Community erhalten Clients Zugriff
+                                    auf die relevanten Datensätze.</p>
+                                <p>Das System verwaltet knapp eine Million Nutzer und läuft containerisiert und skaliert
+                                    in einem Kubernetes-Cluster. Im Rahmen einer
+                                    umfassenden
+                                    Modernisierung wurde die Datenbank von IBM DB2 auf PostgreSQL migriert. Anschließend
+                                    folgten tiefgehende Performance-Analysen, die unter anderem zur Partitionierung der
+                                    Tabellen führten. Logging und Monitoring erfolgen über den Elastic Stack sowie
+                                    Prometheus und Grafana. Eine CI/CD-Pipeline in Jenkins automatisiert Build und
+                                    Deployment, ergänzt durch statische Code-Analyse mit SonarQube und CVE-Scans mit
+                                    Black Duck.</p>
+                                <h6>Meine Rolle</h6>
+                                <p>Weiterentwicklung, Wartung, Performance-Optimierung und Implementierung neuer
+                                    Features.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 2 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card-item" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                        <h5>Nutzer Daten CRUD-Services</h5>
+                        <p class="project-tech">
+                            <i class="devicon-java-plain colored"></i> Java,
+                            <i class="devicon-spring-plain colored"></i> Spring/Spring Boot,
+                            <i class="devicon-postgresql-plain colored"></i> PostgreSQL,
+                            LDAP,
+                            <i class="devicon-docker-plain colored"></i> Docker,
+                            <i class="devicon-kubernetes-plain colored"></i> Kubernetes,
+                            <i class="devicon-elasticsearch-plain colored"></i> Elasticsearch,
+                            <i class="devicon-prometheus-original colored"></i> Prometheus,
+                            <i class="devicon-grafana-plain colored"></i> Grafana,
+                            <i class="devicon-jenkins-plain colored"></i> Jenkins,
+                            <i class="devicon-sonarqube-original colored"></i> sonarqube,
+                            Black Duck
+                        </p>
+                        <p>REST-APIs für die Verwaltung von Nutzer- und Stammdaten. Self-Service und Backend-Integration
+                            – mit automatischer Provisionierung.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Details
+                                ansehen <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2 -->
+                <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModal2Label">Nutzer Daten CRUD-Services</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="project-tech">
+                                    <i class="devicon-java-plain colored"></i> Java,
+                                    <i class="devicon-spring-plain colored"></i> Spring/Spring Boot,
+                                    <i class="devicon-postgresql-plain colored"></i> PostgreSQL,
+                                    LDAP,
+                                    <i class="devicon-docker-plain colored"></i> Docker,
+                                    <i class="devicon-kubernetes-plain colored"></i> Kubernetes,
+                                    <i class="devicon-elasticsearch-plain colored"></i> Elasticsearch,
+                                    <i class="devicon-prometheus-original colored"></i> Prometheus,
+                                    <i class="devicon-grafana-plain colored"></i> Grafana,
+                                    <i class="devicon-jenkins-plain colored"></i> Jenkins,
+                                    <i class="devicon-sonarqube-original colored"></i> sonarqube,
+                                    Black Duck
+                                </p>
+                                <p>Mehrere REST-APIs zur Verwaltung von Nutzer- und Stammdaten. Die Services
+                                    unterstützen CRUD-Operationen und dienen sowohl als Backend für andere Systeme als
+                                    auch als Schnittstelle für ein Self-Service-Portal. Neben den Standardoperationen
+                                    stoßen die APIs auch komplexere Prozesse an, darunter automatische Provisionierung.
+                                </p>
+                                <p>Das System läuft containerisiert in einem Kubernetes-Cluster mit automatischer
+                                    Skalierung. Logging und Monitoring erfolgen über den Elastic Stack sowie Prometheus
+                                    und Grafana. Eine CI/CD-Pipeline in Jenkins automatisiert Build und Deployment,
+                                    ergänzt durch statische Code-Analyse mit SonarQube und CVE-Scans mit Black Duck.</p>
+                                <h6>Meine Rolle</h6>
+                                <p>Weiterentwicklung, Wartung, Performance-Optimierung und Implementierung neuer
+                                    Features.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 3 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card-item" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                        <h5>Synchronisierung von Nutzer Daten</h5>
+                        <p class="project-tech">
+                            <i class="devicon-java-plain colored"></i> Java,
+                            LDAP, IBM MQ,
+                            <i class="devicon-rabbitmq-original colored"></i> RabbitMQ,
+                            <i class="devicon-docker-plain colored"></i> Docker,
+                            <i class="devicon-kubernetes-plain colored"></i> Kubernetes,
+                            <i class="devicon-elasticsearch-plain colored"></i> Elasticsearch,
+                            <i class="devicon-prometheus-original colored"></i> Prometheus,
+                            <i class="devicon-grafana-plain colored"></i> Grafana,
+                            <i class="devicon-jenkins-plain colored"></i> Jenkins,
+                            <i class="devicon-sonarqube-original colored"></i> sonarqube,
+                            Black Duck
+                        </p>
+                        <p>Über 20 Java-Prozesse zur Synchronisation von Nutzerdaten zwischen LDAP-Directories und
+                            Datenbanken, migriert von VMs auf Kubernetes.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Details
+                                ansehen <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 3 -->
+                <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModal3Label">Synchronisierung von Nutzer Daten</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="project-tech">
+                                    <i class="devicon-java-plain colored"></i> Java,
+                                    LDAP, IBM MQ,
+                                    <i class="devicon-rabbitmq-original colored"></i> RabbitMQ,
+                                    <i class="devicon-docker-plain colored"></i> Docker,
+                                    <i class="devicon-kubernetes-plain colored"></i> Kubernetes,
+                                    <i class="devicon-elasticsearch-plain colored"></i> Elasticsearch,
+                                    <i class="devicon-prometheus-original colored"></i> Prometheus,
+                                    <i class="devicon-grafana-plain colored"></i> Grafana,
+                                    <i class="devicon-jenkins-plain colored"></i> Jenkins,
+                                    <i class="devicon-sonarqube-original colored"></i> sonarqube,
+                                    Black Duck
+                                </p>
+                                <p>Mehr als 20 Java-Prozesse, die Nutzerdaten zwischen verschiedenen LDAP-Directories
+                                    und Datenbanken synchronisieren, teilweise bidirektional. Die Prozesse basieren auf
+                                    einem eigenentwickelten Framework und kommunizieren über IBM MQ sowie RabbitMQ.
+                                </p>
+                                <p>Das System verwaltet knapp eine Million Nutzer. Besondere Herausforderungen waren die
+                                    Sicherstellung der Datenintegrität bei bidirektionaler Synchronisation sowie die
+                                    Migration von klassischen VMs in ein Kubernetes-Cluster.</p>
+                                <h6>Meine Rolle</h6>
+                                <p>Weiterentwicklung, Wartung, Performance-Optimierung und Implementierung neuer
+                                    Features.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 4 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card-item" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                        <h5>Teamentwicklung</h5>
+                        <p class="project-tech">Clean Code, Code Reviews, Git-Workflows, SonarQube, Jira,
+                            Pull-Request-Templates</p>
+                        <p>Projektverantwortung und Förderung der Code-Qualität im Team, durch Workshops, Templates und
+                            automatisierte Quality Gates.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Details
+                                ansehen <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 4 -->
+                <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModal4Label">Teamentwicklung</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="project-tech">Clean Code, Code Reviews, Git-Workflows, SonarQube, Jira,
+                                    Pull-Request-Templates
+                                </p>
+                                <p>Als erfahrener Entwickler übernahm ich die Projektverantwortung in einem 7-köpfigen
+                                    Team. Die zentrale Herausforderung war, ein gemeinsames Verständnis von
+                                    Code-Qualität zu etablieren.
+                                </p>
+                                <p>Dafür konzipierte und führte ich mehrere Workshops zu Clean Code, Testing, Code
+                                    Reviews und Git-Workflows. Ergänzend führte ich Pull-Request-Templates und
+                                    Jira-Ticket-Templates ein, um einheitliche Standards zu schaffen. Mit SonarQube PR
+                                    Decorations wurden automatisierte Quality Gates direkt in den Review-Prozess
+                                    integriert.</p>
+                                <h6>Meine Rolle</h6>
+                                <p>Projektverantwortung, Workshop-Konzeption und -Durchführung, Einführung von
+                                    Prozessstandards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 5 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card-item" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                        <h5>Digitales Kfz-Serviceheft</h5>
+                        <p class="project-tech">
+                            <i class="devicon-java-plain colored"></i> Java,
+                            <i class="devicon-spring-plain colored"></i> Spring/Spring Boot/Spring JPA,
+                            <i class="devicon-thymeleaf-plain colored"></i> Thymeleaf,
+                            <i class="devicon-postgresql-plain colored"></i> PostgreSQL
+                        </p>
+                        <p>Lernprojekt mit Spring Boot. Eine Webapp zur Verwaltung von Autos und Serviceheften mit
+                            Thymeleaf und PostgreSQL.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Details
+                                ansehen <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 5 -->
+                <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModal5Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModal5Label">Digitales Kfz-Serviceheft</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="project-tech">Clean Code, Code Reviews, Git-Workflows, SonarQube, Jira,
+                                    Pull-Request-Templates
+                                </p>
+                                <p>Ein privates Lernprojekt, um Spring und Spring Boot zu vertiefen. Die Webapp
+                                    ermöglicht das Anlegen von Autos, jeweils mit zugehörigem Serviceheft. Einzelne
+                                    Serviceheft-Einträge können erstellt und gespeichert werden.
+                                </p>
+                                <p>Das Frontend nutzt Thymeleaf, die Persistenz läuft über Spring JPA mit einer
+                                    PostgreSQL-Datenbank.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 6 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card-item" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                        <h5>Reise Mobile App</h5>
+                        <p class="project-tech">
+                            <i class="devicon-dart-plain colored"></i> Dart,
+                            <i class="devicon-flutter-plain colored"></i> Flutter,
+                            KI-Integration (z.B. OpenAI API)
+                        </p>
+                        <p>Mobile App im Bereich Reise & Tourismus mit KI-Integration, die aktuell noch in Entwicklung
+                            ist.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Details
+                                ansehen <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 6 -->
+                <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModal6Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModal6Label">Reise Mobile App</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="project-tech">
+                                    <i class="devicon-dart-plain colored"></i> Dart,
+                                    <i class="devicon-flutter-plain colored"></i> Flutter,
+                                    KI-Integration (z.B. OpenAI API)
+                                </p>
+                                <p>Eine mobile App im Bereich Reise und Tourismus mit KI-gestützten Funktionen, die sich
+                                    aktuell in aktiver Entwicklung befindet. Weitere Details folgen nach Fertigstellung.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 7 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card-item" data-bs-toggle="modal" data-bs-target="#projectModal7">
+                        <h5>mehmetkizil.de</h5>
+                        <p class="project-tech">
+                            <i class="devicon-html5-plain colored"></i> HTML,
+                            <i class="devicon-css3-plain colored"></i> CSS,
+                            <i class="devicon-bootstrap-plain colored"></i> Bootstrap,
+                            <i class="devicon-jekyll-plain"></i> Jekyll
+                        </p>
+                        <p>Mein persönliches Portfolio: Es ist responsiv, performant und verfügt über ein integriertes
+                            Blog-System auf Basis von Jekyll.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Details
+                                ansehen <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 7 -->
+                <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="projectModal7Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModal7Label">mehmetkizil.de</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="project-tech">
+                                    <i class="devicon-html5-plain colored"></i> HTML,
+                                    <i class="devicon-css3-plain colored"></i> CSS,
+                                    <i class="devicon-bootstrap-plain colored"></i> Bootstrap,
+                                    <i class="devicon-jekyll-plain colored"></i> Jekyll
+                                </p>
+                                <p>Mein persönliches Portfolio als Softwareentwickler. Responsiv und
+                                    performant umgesetzt mit HTML, CSS und Bootstrap. Ein integriertes Blog-System auf
+                                    Basis von Jekyll ermöglicht das Veröffentlichen von Beiträgen in Markdown mit
+                                    Tag-Filterung.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 8 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card-item" data-bs-toggle="modal" data-bs-target="#projectModal8">
+                        <h5>zwanzig45.com</h5>
+                        <p class="project-tech">
+                            <i class="devicon-html5-plain colored"></i> HTML,
+                            <i class="devicon-css3-plain colored"></i> CSS,
+                            <i class="devicon-bootstrap-plain colored"></i> Bootstrap,
+                            Heyflow-Integration
+                        </p>
+                        <p><a href="https://www.zwanzig45.com" target="_blank">zwanzig45.com</a> ist eine responsive
+                            Webseite
+                            mit HTML, CSS und Bootstrap, inklusive Heyflow-Integration für
+                            interaktive Nutzerführung.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Details
+                                ansehen <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 8 -->
+                <div class="modal fade" id="projectModal8" tabindex="-1" aria-labelledby="projectModal8Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModal8Label">zwanzig45.com</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Schließen"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="project-tech">
+                                    <i class="devicon-html5-plain colored"></i> HTML,
+                                    <i class="devicon-css3-plain colored"></i> CSS,
+                                    <i class="devicon-bootstrap-plain colored"></i> Bootstrap,
+                                    Heyflow-Integration
+                                </p>
+                                <p><a href="https://www.zwanzig45.com" target="_blank">zwanzig45.com</a> ist eine
+                                    statische Webseite für eine Energieberatung mit klarem, modernem Design. Sie ist
+                                    umgesetzt
+                                    mit HTML, CSS und
+                                    Bootstrap für volle Responsivität auf allen Geräten. Eine Heyflow-Integration
+                                    ermöglicht interaktive Nutzerführung und Lead-Generierung.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-5">
+        <div class="container">
+            <div class="cta-box text-center">
+                <h2>Interesse an einer Zusammenarbeit?</h2>
+                <p class="lead">Ich freue mich über neue Projekte und Herausforderungen.</p>
+                <a href="mailto:deine@email.de" class="btn btn-primary btn-lg">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <h5 class="footer-name">Mehmet Kizil</h5>
+            <p class="footer-location">Stuttgart, Deutschland</p>
+            <div class="footer-social">
+                <a href="mailto:kontakt@mehmetkizil.de" aria-label="E-Mail"><i class="bi bi-envelope-fill"></i></a>
+                <a href="https://www.linkedin.com/in/mehmet-kizil" target="_blank" aria-label="LinkedIn"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/mehmentum" target="_blank" aria-label="GitHub"><i
+                        class="bi bi-github"></i></a>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copyright">&copy; 2025 Mehmet Kizil</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
